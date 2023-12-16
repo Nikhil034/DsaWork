@@ -40,7 +40,7 @@ public:
                            inorder, inStart, rootIndexInInorder - 1, inorderMap);
         root->right = build(preorder, preStart + leftSubtreeSize + 1, preEnd,
                             inorder, rootIndexInInorder + 1, inEnd, inorderMap);
-
+  
         return root;
     }
 };
